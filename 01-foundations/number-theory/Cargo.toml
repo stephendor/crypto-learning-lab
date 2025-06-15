@@ -11,6 +11,7 @@ rand = { workspace = true }
 proptest = { workspace = true }
 criterion = { workspace = true }
 
-[[bench]]
-name = "modular_arithmetic"
-harness = false
+# Comment out the benchmark until we create the file
+# [[bench]]
+# name = "modular_arithmetic"
+# harness = false

@@ -1,10 +1,11 @@
-//! Classical Cryptography Implementations
-//! 
-//! This crate implements historical ciphers to understand basic cryptographic concepts.
+///! Classical Cryptography Implementations
+// 
+/// This crate implements historical ciphers to understand basic cryptographic concepts.
 
 pub mod caesar;
-pub mod vigenere;
-pub mod substitution;
+// Comment out modules that don't exist yet
+// pub mod vigenere;
+// pub mod substitution;
 
 pub use caesar::Caesar;
-pub use vigenere::Vigenere;
+// pub use vigenere::Vigenere;

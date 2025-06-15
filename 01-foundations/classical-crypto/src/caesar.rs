@@ -20,7 +20,7 @@ impl Caesar {
     }
 
     pub fn decrypt(&self, ciphertext: &str) -> String {
-        plaintext
+        ciphertext  // Fixed: was "plaintext"
             .chars()
             .map(|c| self.shift_char(c, 26 - self.shift))
             .collect()

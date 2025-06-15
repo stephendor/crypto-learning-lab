@@ -3,13 +3,14 @@ members = [
     "01-foundations/classical-crypto",
     "01-foundations/number-theory", 
     "01-foundations/cryptopals",
-    "02-primitives/symmetric",
-    "02-primitives/hashing",
-    "02-primitives/asymmetric",
-    "03-protocols/tls",
-    "examples/secure-chat",
-    "examples/password-manager",
-    "examples/blockchain-demo",
+    # Comment out crates that don't exist yet
+    # "02-primitives/symmetric",
+    # "02-primitives/hashing",
+    # "02-primitives/asymmetric",
+    # "03-protocols/tls",
+    # "examples/secure-chat",
+    # "examples/password-manager",
+    # "examples/blockchain-demo",
 ]
 
 resolver = "2"
