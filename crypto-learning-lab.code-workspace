@@ -1,0 +1,103 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "rust-analyzer.checkOnSave.command": "clippy",
+        "rust-analyzer.cargo.buildScripts.enable": true,
+        "rust-analyzer.procMacro.enable": true,
+        "files.watcherExclude": {
+            "**/target/**": true,
+            "**/.git/objects/**": true,
+            "**/.git/subtree-cache/**": true,
+            "**/node_modules/**": true
+        },
+        "search.exclude": {
+            "**/target": true,
+            "**/Cargo.lock": true
+        },
+        "editor.formatOnSave": true,
+        "editor.rulers": [100],
+        "rust-analyzer.lens.enable": true,
+        "rust-analyzer.lens.run": true,
+        "rust-analyzer.lens.debug": true,
+        "lean4.elaborationDelay": 200,
+        "lean4.input.leader": "\\"
+    },
+    "extensions": {
+        "recommendations": [
+            "rust-lang.rust-analyzer",
+            "leanprover.lean4",
+            "tamasfe.even-better-toml",
+            "serayuzgur.crates",
+            "vadimcn.vscode-lldb",
+            "ms-vscode.hexeditor",
+            "yzhang.markdown-all-in-one"
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "cargo build",
+                "type": "shell",
+                "command": "cargo",
+                "args": ["build"],
+                "group": "build",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "shared"
+                },
+                "problemMatcher": "$rustc"
+            },
+            {
+                "label": "cargo test",
+                "type": "shell",
+                "command": "cargo",
+                "args": ["test"],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "shared"
+                },
+                "problemMatcher": "$rustc"
+            },
+            {
+                "label": "cargo run caesar",
+                "type": "shell",
+                "command": "cargo",
+                "args": ["run", "--bin", "caesar", "--", "encrypt", "--shift", "3", "--text", "Hello World"],
+                "group": "build"
+            }
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "lldb",
+                "request": "launch",
+                "name": "Debug Caesar Cipher",
+                "cargo": {
+                    "args": [
+                        "build",
+                        "--bin=caesar",
+                        "--package=classical-crypto"
+                    ],
+                    "filter": {
+                        "name": "caesar",
+                        "kind": "bin"
+                    }
+                },
+                "args": ["encrypt", "--shift", "3", "--text", "Hello World"],
+                "cwd": "${workspaceFolder}"
+            }
+        ]
+    }
+}

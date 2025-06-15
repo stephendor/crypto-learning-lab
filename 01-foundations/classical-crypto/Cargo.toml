@@ -1,0 +1,16 @@
+[package]
+name = "classical-crypto"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { workspace = true }
+serde = { workspace = true }
+
+[[bin]]
+name = "caesar"
+path = "src/bin/caesar.rs"
+
+[[bin]]
+name = "vigenere"
+path = "src/bin/vigenere.rs"

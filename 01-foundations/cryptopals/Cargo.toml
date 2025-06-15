@@ -1,0 +1,18 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hex = { workspace = true }
+base64 = "0.21"
+rand = { workspace = true }
+aes = { workspace = true }
+
+[[bin]]
+name = "set1"
+path = "src/bin/set1.rs"
+
+[[bin]]
+name = "set2"
+path = "src/bin/set2.rs"
