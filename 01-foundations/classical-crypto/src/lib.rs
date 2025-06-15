@@ -1,6 +1,5 @@
-///! Classical Cryptography Implementations
-// 
-/// This crate implements historical ciphers to understand basic cryptographic concepts.
+//! Classical Cryptography Implementations
+//! This crate implements historical ciphers to understand basic cryptographic concepts.
 
 pub mod caesar;
 // Comment out modules that don't exist yet
