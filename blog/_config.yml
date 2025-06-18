@@ -5,7 +5,7 @@ url: "https://stephendor.github.io"
 baseurl: "/blog"  # <- subpath for this repo
 
 
-permalink: /posts/:title
+permalink: /:categories/:year/:month/:day/:title/
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 excerpt_separator: "<!--more-->"
