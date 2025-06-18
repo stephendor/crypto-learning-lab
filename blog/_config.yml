@@ -1,9 +1,8 @@
 title: Zero Knowledge Proof
 description: "From Zero to Finite Fields: A Journey into Cryptography"
 author: Stephen Dorman
+baseurl: "/crypto-learning-lab"
 url: "https://stephendor.github.io"
-baseurl: "/blog"  # <- subpath for this repo
-
 
 permalink: /:categories/:year/:month/:day/:title/
 markdown: kramdown
