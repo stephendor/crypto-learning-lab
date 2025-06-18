@@ -1,8 +1,9 @@
 title: Zero Knowledge Proof
 description: "From Zero to Finite Fields: A Journey into Cryptography"
 author: Stephen Dorman
-baseurl: "/blog" # Empty for GitHub Pages user/organization site; set to "/blog" if in subdir
-url: "https://stephendor.github.io" # Update to your custom domain if applicable
+url: "https://stephendor.github.io"
+baseurl: "/crypto-learning-lab"  # <- subpath for this repo
+
 
 permalink: /posts/:title
 markdown: kramdown
