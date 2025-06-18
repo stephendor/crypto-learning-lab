@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Zero Knowledge Proof
-description: A journey into the world of cryptography: from zero to finite field.
+title: "Zero Knowledge Proof"
+description: "A journey into the world of cryptography: from zero to finite field.""
 baseurl: ""  
 url: "https://stephendor.github.io/crypto-learning-lab"
 
