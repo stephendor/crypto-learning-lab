@@ -7,8 +7,7 @@
 
 ## 🎯 Mission
 
-This repository documents my 12-month journey from pure mathematics into applied cryptography, emphasizing:
-- **Theory to Practice**: Every mathematical concept implemented in Rust
+This repository documents my journey from pure mathematics into applied cryptography, emphasizing:
 - **Formal Verification**: Critical implementations proven correct in Lean 4
 - **Security Awareness**: Constant-time algorithms and side-channel resistance
 - **Educational Value**: Clear explanations linking math, code, and proofs
